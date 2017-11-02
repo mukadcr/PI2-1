@@ -1,0 +1,146 @@
+* {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	}
+	
+.all{
+	display:flex;
+	font-family:'Roboto', sans-serif;
+	}
+img {
+	max-width:100%;
+	}
+a {
+	text-decoration:none;
+	}
+	
+.conteudo, .lateral{
+	min-height: 100vh;
+	}
+.conteudo{
+	width: 100%;
+	width: calc(100% - 201px);
+	background:#FAFBFD;
+	}
+.lateral{
+	width: 201px; 
+	box-shadow:10px 10px 5px #888888;
+	border-right: 1px solid #dedede;
+	padding: 0 10px;
+	}
+.container{
+	padding: 20px;
+	}
+header{
+	background:#fff;
+	}
+
+nav li {
+	padding:10px 15px 5px 15px;
+	border-radius: 5px;
+	margin:10px;
+	height:40px;
+	list-style:none;
+	}
+.ativo {
+	background:#F44336;
+	}
+.ativo a {
+	color:#fff;
+	}
+	
+li a {
+	color:#6C717B;
+	}
+	
+.barra-superior {
+	display: flex;
+	justify-content:space-between;
+	height:60px;
+	align-items:center;
+	padding: 20px;
+	border-bottom:1px solid #dedede;
+	color: #6C717B;
+	}
+.blocos {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	margin-top: 50px;
+	}
+
+.tag1, .tag2, .tag3 {
+	width: 90px;
+	height:90px;
+	border-radius: 5px;
+	transform: translateY(-60px);
+	margin-bottom: -60px;
+	margin-right: 20px;
+	display:flex;
+	align-items: center;
+    justify-content: center;
+}
+.tag1{
+	background: #F44336;
+	}
+.tag2{
+	background: #3498DB;
+	}
+.tag3 {
+	background: #1ABC9C;
+	}
+
+.tag1 i, .tag2 i, .tag3 i {
+	font-size: 2.916875em;
+	color: #fff;
+	}
+
+.bloco-link{
+	width: 100%;
+	border-top: 1px solid #dedede;
+	padding-top: 15px;
+	}
+.bloco-link a {
+	color: #6C717B;
+	}
+.bloco-info {
+	display:flex;
+	padding-bottom: 10px;
+	flex-direction:column;
+	text-align:right;
+	flex:1;
+}
+.bloco1, .bloco2, .bloco3 {
+	width: calc(33.333% - 15px);
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	padding:15px;
+	display: flex;
+	flex-wrap: wrap;
+	}
+	
+h3 {
+	font-weight:300;
+	}
+i {
+	margin-right: 8px;
+	}
+
+.retornoBanco {
+	padding: 10px 0;
+	font-size: 2.25em;
+	color: #6C717B;
+	}
+.produto {
+	color: #F44336;
+	}
+.usuario {
+	color: #1ABC9C;
+	}
+.categoria{
+	color: #3498DB;
+}
