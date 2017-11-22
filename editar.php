@@ -42,41 +42,25 @@ include('../auth/controle.php');
         <section>
             <div class="container">
 		
-		<form method="post" enctype="multipart/form-data">
+		<form method="post">
 		
 			
-			Nome do produto: <input type="text" 
-					name="nomeProduto"
-					value="<?php echo $dadosProduto['nomeProduto']; ?>"><br><br>
+			Nome: <input type="text" 
+					name="nomeUsuario"
+					value="<?php echo $dados_usuario['nomeUsuario']; ?>"><br><br>
 					
-			Descrição: <input type="text" 
-					name="descProduto"
-					value="<?php echo $dadosProduto['descProduto']; ?>"><br><br>
+			Nome: <input type="text" 
+					name="nomeUsuario"
+					value="<?php echo $dados_usuario['nomeUsuario']; ?>"><br><br>
 
-			Preço: <input type="text" 
-					name="precProduto"
-					value="<?php echo $dadosProduto['precProduto']; ?>"><br><br>
-
-            Categoria: <select name="idCategoria">
-                        <?php
-
-                        foreach ($categorias as $idCategoria => $categoria) {
-                            echo "<option value='$idCategoria'> {$categoria['nomeCategoria']} </option> ";
-                        }
-
-                        ?>
-                        </select><br><br>
-           
-
-            Status: <input type="checkbox" name="ativoProduto" 
-                    <?php if($dadosProduto['ativoProduto'] == 1) echo "checked"; ?>><br><br>
-
-            Imagem <input type="file" 
-                          name="imagem">
+			Nome: <input type="text" 
+					name="nomeUsuario"
+					value="<?php echo $dados_usuario['nomeUsuario']; ?>"><br><br>
 			
-		
-			<input type="hidden" name="idProduto" 
-				value="<?php echo $dadosProduto['idProduto']; ?>">		
+			Ativo: <input type="checkbox" name="usuarioAtivo" 
+					<?php if($dados_usuario['usuarioAtivo'] == 1) echo "checked"; ?>><br><br>
+			<input type="hidden" name="idUsuario" 
+				value="<?php echo $dados_usuario['idUsuario']; ?>">		
 			<input type="submit" value="Atualizar" name="btnAtualizar">
 		
 		</form>
